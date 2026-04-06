@@ -1,16 +1,135 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 React Todo List App
 
-Currently, two official plugins are available:
+A simple and responsive **Todo List Application built using React JS, Context API, and Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project allows users to manage daily tasks efficiently with features like adding, editing, completing, and deleting todos.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ➕ Add new todos
+- ✏️ Edit existing todos
+- ✅ Mark tasks as completed
+- ❌ Delete tasks
+- 🎨 Dynamic UI styling based on task status
+- 🌍 Global state management using Context API
+- ♻️ Reusable React components
+- 📱 Responsive and clean UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React JS**
+- **Context API**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+
+---
+
+## 📂 Folder Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── TodoForm.jsx
+│   ├── TodoItem.jsx
+│   └── index.js
+│
+├── context/
+│   ├── TodoContext.js
+│   └── index.js
+│
+├── App.jsx
+├── main.jsx
+
+
+
+📌 Components Explanation
+🔹 TodoForm
+
+This component is responsible for:
+
+Taking input from user
+Adding a new todo
+Clearing input field after submission
+🔹 TodoItem
+
+This component handles:
+
+Displaying todo items
+Editing existing todo
+Saving updated todo
+Marking todo as completed
+Deleting todo
+🔹 TodoContext
+
+This manages global todo state using:
+
+addTodo()
+updateTodo()
+deleteTodo()
+toggleComplete()
+⚙️ How It Works
+➕ Add Todo
+
+Enter your task in the input field and click Add.
+
+✏️ Edit Todo
+
+Click the edit button (✏️) to update task text and save using 📁.
+
+✅ Complete Todo
+
+Use the checkbox to mark task as completed.
+
+❌ Delete Todo
+
+Click the delete button to remove the task.
+
+🎯 What I Learned
+
+This project helped me understand:
+
+React functional components
+Props
+useState
+useContext
+Context API
+CRUD operations
+Reusable component design
+Tailwind CSS styling
+UI state handling
+📸 Screenshot
+
+Add your project screenshot here after uploading image in repo.
+
+
+
+Follow these steps to run the project locally:
+
+git clone https://github.com/your-username/react-todo-list.git
+cd react-todo-list
+npm install
+npm run dev
+🌟 Future Improvements
+
+Planned features for next version:
+
+💾 Local Storage support
+🌙 Dark mode
+🔍 Filter completed and pending todos
+📅 Due date support
+🎯 Drag and drop sorting
+📊 Progress tracker
+🙌 Author
+
+Sibtain Raza
+
+Made with ❤️ using React JS
+
+
